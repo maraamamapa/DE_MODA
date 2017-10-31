@@ -1,3 +1,11 @@
+html {
+  min-height: 100%;
+  position: relative;
+}
+body {
+  margin: 0;
+  margin-bottom: 1000px;
+}
 .Busqueda {
     /*position:absolut;*/
     border: 1px solid black;
@@ -25,14 +33,16 @@
 
 }
 footer{
-  clear: both;
-  font-family: Arial;
-  font-size: 25px;
-  color:white;
-  margin-top:50px;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 100px;
-  background-color:rgb(27, 54, 80);
+  background-color: rgb(27, 54, 80);
+   position: absolute;
+   bottom: 0;
+   width: 100%;
+   height: 150px;
+   color: white;
+}
+table{
+  border: 1px solid black;
+}
+td{
+  padding: 15px;
 }
