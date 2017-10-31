@@ -4,7 +4,7 @@ ampa_homepage:
 
 ampa_ropa:
     path:     /ropa
-    defaults: { _controller: AmpaBundle:Default:ropa }
+    defaults: { _controller: AmpaBundle:Ropa:ropa }
 
 ampa_complementos:
     path:     /complementos

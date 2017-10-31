@@ -1,0 +1,45 @@
+{% extends '::base0.html.twig' %}
+{% block busqueda %}
+<h2>Que buscas?</h2>
+Marca:
+<select>
+  <option value="Adidas">Adidas</option>
+  <option value="Nike">Nike</option>
+</select>
+<br>
+<br>
+Busqueda por genero:
+<select>
+  <option value="H">Hombre</option>
+  <option value="M">Mujer</option>
+</select>
+<br>
+<br>
+Busqueda por tipo
+<select>
+  <option value="Camisas">Camisas</option>
+  <option value="Faldas">Faldas</option>
+  <option value="Pantalones">Pantalones</option>
+</select>
+{% endblock %}
+{% block tablaInfo %}
+  <table border="1px solid black">
+    <tr>
+      <th>Marca</th>
+      <th>Nombre de la pieza</th>
+      <th>Genero</th>
+      <th>Talla</th>
+      <th>Precio</th>
+    </tr>
+
+  {% for ropa in tablaRopa %}
+  <tr>
+    <td>{{ ropa.Marca }}</td>
+    <td>{{ ropa.nombrePieza }}</td>
+    <td>{{ ropa.Genero }}</td>
+    <td>{{ ropa.Talla }}</td>
+    <td>{{ ropa.Precio }}</td>
+  </tr>
+  {% endfor %}
+    </table>
+{% endblock %}
