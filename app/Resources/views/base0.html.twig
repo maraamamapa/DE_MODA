@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>{% block title %}Welcome!{% endblock %}</title>
+        {% block stylesheets %}
+        <link rel="stylesheet" href="{{ asset('css/Avanzada.css') }}">
+        <link rel="stylesheet" href="{{ asset('css/Cabezera.css') }}">
+        <link rel="stylesheet" href="{{ asset('css/master.css') }}">
+        <link rel="stylesheet" href="{{ asset('css/ropa.css') }}">
+        {% endblock %}
+        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+    </head>
+    <body>
+      <header>
+      		<div class="wrapper">
+      			<div class="logo">DE MODA</div>
+      				<nav>
+      					<a href="{{ path('ampa_homepage') }}">Inicio</a>
+      					<a href="{{ path('ampa_ropa') }}">Ropa</a>
+      					<a href="{{ path('ampa_complementos') }}">Complementos</a>
+
+      				</nav>
+      		</div>
+  		</header>
+      <section>
+        <article class="Busqueda">
+          {% block busqueda %}{% endblock %}
+        </article>
+        <article class="TablaInfo">
+          {% block tablaInfo %}{% endblock %}
+        </article>
+      </section>
+      <footer> Boutique desde 2013, tenemos lo que buscas si ir a la moda deseas.
+                Siguenos en nuestras redes sociales</footer>
+        {% block javascripts %}{% endblock %}
+    </body>
+</html>

@@ -1,0 +1,27 @@
+{% extends '::base0.html.twig' %}
+{% block busqueda %}
+<h2>Que buscas?</h2>
+Marca complementos:
+<select>
+  <option value="Tous">Tous</option>
+  <option value="Swarowky">Swarowky</option>
+</select>
+<br>
+<br>
+Busqueda por genero:
+<select>
+  <option value="H">Hombre</option>
+  <option value="M">Mujer</option>
+</select>
+<br>
+<br>
+Busqueda por tipo
+<select>
+  <option value="Collares">Collares</option>
+  <option value="Relojes">Relojes</option>
+  <option value="Carteras">Carteras</option>
+</select>
+{% endblock %}
+{% block tablaInfo %}
+tabla
+{% endblock %}

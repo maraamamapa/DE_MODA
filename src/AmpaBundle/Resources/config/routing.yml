@@ -1,0 +1,11 @@
+ampa_homepage:
+    path:     /
+    defaults: { _controller: AmpaBundle:Default:index }
+
+ampa_ropa:
+    path:     /ropa
+    defaults: { _controller: AmpaBundle:Default:ropa }
+
+ampa_complementos:
+    path:     /complementos
+    defaults: { _controller: AmpaBundle:Default:complementos }

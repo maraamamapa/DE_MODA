@@ -1,0 +1,7 @@
+ampa:
+    resource: "@AmpaBundle/Resources/config/routing.yml"
+    prefix:   /libreria
+
+app:
+    resource: '@AppBundle/Controller/'
+    type: annotation

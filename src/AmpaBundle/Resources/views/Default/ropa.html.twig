@@ -1,0 +1,27 @@
+{% extends '::base0.html.twig' %}
+{% block busqueda %}
+<h2>Que buscas?</h2>
+Marca:
+<select>
+  <option value="Adidas">Adidas</option>
+  <option value="Nike">Nike</option>
+</select>
+<br>
+<br>
+Busqueda por genero:
+<select>
+  <option value="H">Hombre</option>
+  <option value="M">Mujer</option>
+</select>
+<br>
+<br>
+Busqueda por tipo
+<select>
+  <option value="Camisas">Camisas</option>
+  <option value="Faldas">Faldas</option>
+  <option value="Pantalones">Pantalones</option>
+</select>
+{% endblock %}
+{% block tablaInfo %}
+tabla
+{% endblock %}
