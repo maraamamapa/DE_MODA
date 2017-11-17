@@ -163,33 +163,4 @@ class Ropa
     {
         return $this->precio;
     }
-
-    /**
-     * Set marca
-     *
-     * @param \AmpaBundle\Entity\marca $marca
-     *
-     * @return Ropa
-     */
-    public function setMarca(\AmpaBundle\Entity\marca $marca = null)
-    {
-        $this->marca = $marca;
-
-        return $this;
-    }
-
-    /**
-     * Get marca
-     *
-     * @return \AmpaBundle\Entity\marca
-     */
-    public function getMarca()
-    {
-        return $this->marca;
-    }
-
-   //  public function __toString()
-   // {
-   //     return $this->nombre;
-   // }
 }

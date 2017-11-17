@@ -9,3 +9,31 @@ ampa_ropa:
 ampa_complementos:
     path:     /complementos
     defaults: { _controller: AmpaBundle:Default:complementos }
+
+ampa_insertarRopa:
+    path:     /insertar
+    defaults: { _controller: AmpaBundle:Ropa:insertar }
+
+ampa_actualizarRopa:
+    path:     /actualizar/{id}
+    defaults: { _controller: AmpaBundle:Ropa:actualizar }
+
+ampa_deleteRopa:
+    path:     /delete/{id}
+    defaults: { _controller: AmpaBundle:Ropa:delete }
+
+ampa_mostrarMarca:
+    path:     /mostrarMarca
+    defaults: { _controller: AmpaBundle:Marca:mostrarMarca }
+
+ampa_insertarMarca:
+    path:     /insertarMarca
+    defaults: { _controller: AmpaBundle:Marca:insertarMarca }
+
+ampa_actualizarMarca:
+    path:     /actualizarMarca/{id}
+    defaults: { _controller: AmpaBundle:Marca:actualizarMarca }
+
+ampa_deleteMarca:
+    path:     /deleteMarca/{id}
+    defaults: { _controller: AmpaBundle:Marca:deleteMarca }
