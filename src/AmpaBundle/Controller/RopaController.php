@@ -19,6 +19,31 @@ class RopaController extends Controller
         $ropa = $repository->findAll();
         return $this->render('AmpaBundle:Carpeta_ropa:ropa.html.twig',array('tablaRopa' => $ropa ));
     }
+    //prueba ej1
+    // muestra por talla de ropa
+    public function muestraNombreAction($talla)
+    {
+
+        $repository = $this->getDoctrine()->getRepository('AmpaBundle:Ropa');
+
+        // find *all* alumnos
+        $name = $repository->findByTalla($talla);
+
+        return $this->render('AmpaBundle:Carpeta_ropa:muestraNombre.html.twig',array('tablaNombre' => $name ));
+    }
+    //prueba ej2
+    //busca por id
+    public function muestrameAction($id)
+    {
+        $repository = $this->getDoctrine()->getRepository('AmpaBundle:Ropa');
+        $muestrame = $repository->find($id);
+
+        return $this->render('AmpaBundle:Carpeta_ropa:muestraNombreC.html.twig',array('tablaMuestra' => $muestrame ));
+    }
+
+
+
+
 
     public function insertarAction(Request $request)
     {

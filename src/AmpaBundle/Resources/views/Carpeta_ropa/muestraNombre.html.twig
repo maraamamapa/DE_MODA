@@ -1,0 +1,9 @@
+<h3>Muestrame</h3>
+<!-- Hago un for para recorrer elementos de la tabla Talla de la BD -->
+{% for ob in tablaNombre %}
+    {{ob.Talla}}
+<br>
+<!-- Enlace , que recoge el id -->
+<a href="{{ path('ampa_muestrame', {'id': ob.id  }) }}" class="btn btn-primary">
+Aprieta este enlace</a>
+{% endfor %}

@@ -37,3 +37,12 @@ ampa_actualizarMarca:
 ampa_deleteMarca:
     path:     /deleteMarca/{id}
     defaults: { _controller: AmpaBundle:Marca:deleteMarca }
+
+# Elementos utilizados en la prueba predefinida la talla a mostrar Talla:L
+ampa_muestraNombre:
+    path:     /muestraNombre/{talla}
+    defaults: { _controller: AmpaBundle:Ropa:muestraNombre, talla:L }
+
+ampa_muestrame:
+    path:     /muestrame/{id}
+    defaults: { _controller: AmpaBundle:Ropa:muestrame}
