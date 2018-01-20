@@ -11,15 +11,15 @@ ampa_complementos:
     defaults: { _controller: AmpaBundle:Default:complementos }
 
 ampa_insertarRopa:
-    path:     /insertar
+    path:     /cud/insertar
     defaults: { _controller: AmpaBundle:Ropa:insertar }
 
 ampa_actualizarRopa:
-    path:     /actualizar/{id}
+    path:     /cud/actualizar/{id}
     defaults: { _controller: AmpaBundle:Ropa:actualizar }
 
 ampa_deleteRopa:
-    path:     /delete/{id}
+    path:     /cud/delete/{id}
     defaults: { _controller: AmpaBundle:Ropa:delete }
 
 ampa_mostrarMarca:
@@ -27,15 +27,15 @@ ampa_mostrarMarca:
     defaults: { _controller: AmpaBundle:Marca:mostrarMarca }
 
 ampa_insertarMarca:
-    path:     /insertarMarca
+    path:     /cud/insertarMarca
     defaults: { _controller: AmpaBundle:Marca:insertarMarca }
 
 ampa_actualizarMarca:
-    path:     /actualizarMarca/{id}
+    path:     /cud/actualizarMarca/{id}
     defaults: { _controller: AmpaBundle:Marca:actualizarMarca }
 
 ampa_deleteMarca:
-    path:     /deleteMarca/{id}
+    path:     /cud/deleteMarca/{id}
     defaults: { _controller: AmpaBundle:Marca:deleteMarca }
 
 # Elementos utilizados en la prueba predefinida la talla a mostrar Talla:L

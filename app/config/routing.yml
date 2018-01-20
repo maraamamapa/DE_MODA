@@ -1,7 +1,15 @@
+usuarios:
+    resource: "@usuariosBundle/Controller/"
+    type:     annotation
+    prefix:   /usuarios
+
 ampa:
     resource: "@AmpaBundle/Resources/config/routing.yml"
-    prefix:   /libreria
+    prefix:   /
 
 app:
     resource: '@AppBundle/Controller/'
     type: annotation
+
+logout:
+    path: /usuarios/logout
